@@ -1,0 +1,13 @@
+<app-navigation
+  *ngIf="page !== paginatedPlanets"
+  [page]="page"
+  [length]="this.length"
+  (getPageEvent)="getPage($event)"
+  (searchEvent)="searchPlanet($event)"
+  (navigationEvent)="navigationEvent($event)"
+></app-navigation>
+<app-planets
+  *ngIf="page !== paginatedPlanets"
+  (getPageEvent)="getPage($event)"
+  [planets]="this.paginatedPlanets"
+></app-planets>

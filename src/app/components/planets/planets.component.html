@@ -1,0 +1,21 @@
+<ul>
+  <li *ngFor="let planet of this.planets">
+    <h2>{{ planet.name }}</h2>
+    <table>
+      <tr>
+        <td>Diameter:</td>
+        <td>Orbital period:</td>
+        <td>Rotation period:</td>
+        <td>Climate:</td>
+        <td>Gravity:</td>
+      </tr>
+      <tr>
+        <td>{{ planet.diameter }}</td>
+        <td>{{ planet.orbital_period }}</td>
+        <td>{{ planet.rotation_period }}</td>
+        <td>{{ planet.climate }}</td>
+        <td>{{ planet.gravity }}</td>
+      </tr>
+    </table>
+  </li>
+</ul>

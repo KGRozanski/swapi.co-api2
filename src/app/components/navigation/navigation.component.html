@@ -1,0 +1,14 @@
+<input
+  type="text"
+  name="search"
+  placeholder="Search for planets..."
+  (keyup)="onType($event)"
+/>
+
+<mat-paginator
+  [length]="length"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="pageSizeOptions"
+  (page)="onNavigationChange($event)"
+>
+</mat-paginator>
